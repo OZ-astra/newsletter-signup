@@ -1,0 +1,429 @@
+/** @format */
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main {
+	width: 100%;
+}
+
+/* signup form starts here */
+
+#signup-form .desktop-img-container {
+	display: none;
+}
+#signup-form img {
+	width: 100%;
+}
+
+.page-description {
+	padding: 1.5rem 0;
+	display: grid;
+	place-items: center;
+}
+
+#signup-form h1,
+#signup-form p,
+ul {
+	padding: 0 1.5rem;
+}
+
+#signup-form h1 {
+	width: 100%;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: hsl(235, 18%, 26%);
+}
+
+#signup-form p {
+	margin-top: 1.2rem;
+	font-weight: 400;
+}
+
+ul {
+	margin-top: 1.5rem;
+	line-height: 1.4rem;
+	width: 100%;
+}
+
+li {
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+li {
+	list-style: none;
+	background-image: url("assets/images/icon-list.svg");
+	background-size: 18px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+}
+
+form {
+	margin-top: 1.9rem;
+	padding-left: 1rem;
+}
+
+.label {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.label p {
+	color: hsl(235, 18%, 26%);
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.label p#email-error-message {
+	color: hsl(4, 100%, 67%);
+}
+
+input {
+	border: 1px solid hsl(0, 0%, 58%);
+	width: 100%;
+	padding: 1.2rem 0rem;
+	margin-top: 0.5rem;
+	border-radius: 8px;
+	font-weight: 400;
+}
+
+#submit {
+	font-size: 0.95rem;
+	background-color: hsl(234, 29%, 20%);
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+	margin-top: 1.5rem;
+	box-shadow: 0px 2px 3px hsl(234, 29%, 20%);
+}
+
+#submit:active {
+	background-color: hsl(4, 100%, 67%);
+}
+
+input::placeholder {
+	font-size: 1rem;
+	padding-left: 0.6rem;
+	color: hsl(0, 0%, 58%, 0.9);
+}
+
+/* class from js */
+.empty-email::placeholder {
+	color: hsl(4, 100%, 67%);
+}
+
+/* class from js */
+.new-placeholder::placeholder {
+	color: hsl(0, 0%, 58%, 0.9);
+}
+
+/* success message starts here */
+
+#success-message {
+	display: grid;
+	padding-left: 1.5rem;
+	margin-top: 20rem;
+}
+
+#success-message img {
+	width: 20%;
+}
+
+#success-message h1 {
+	width: 100%;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: hsl(235, 18%, 26%);
+	line-height: 2.5rem;
+	margin-top: 2rem;
+}
+
+#success-message p {
+	margin-top: 1.5rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	font-size: 1rem;
+}
+
+#success-message a {
+	color: hsl(235, 18%, 26%);
+}
+
+#success-message button {
+	margin-top: 19rem;
+	border: 1px solid hsl(0, 0%, 58%);
+	width: 100%;
+	padding: 1.2rem 0rem;
+	border-radius: 8px;
+	font-weight: 400;
+	font-size: 0.95rem;
+	background-color: hsl(234, 29%, 20%);
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+}
+
+/* tablet design for signup form*/
+
+@media (min-width: 480px) {
+	body,
+	main {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: hsl(235, 18%, 26%);
+	}
+
+	#success-message {
+		width: 320px;
+		margin: 0;
+		border-radius: 15px;
+		background-color: white;
+		padding-right: 1.5rem;
+	}
+
+	#success-message img {
+		margin-top: 1.8rem;
+		width: 30px;
+	}
+
+	#success-message h1 {
+		font-size: 30px;
+		margin-top: 1.2rem;
+	}
+
+	#success-message p {
+		font-size: 11px;
+		line-height: 1.2rem;
+		margin-top: 0.3rem;
+	}
+
+	#success-message button {
+		margin: 0;
+		font-size: 10px;
+		padding: 0.8rem 0;
+		margin-top: 1.1rem;
+		border-radius: 5px;
+		margin-bottom: 2rem;
+	}
+
+	/* siggnup form starts here */
+
+	#signup-form {
+		display: flex;
+		width: 500px;
+		margin: 0;
+		padding: 0;
+		background-color: hsl(0, 0%, 100%);
+		border-radius: 15px;
+	}
+
+	#signup-form .img-container img {
+		display: none;
+	}
+
+	#signup-form .desktop-container {
+		display: flex;
+		padding: 1rem;
+	}
+
+	#signup-form .page-description {
+		width: 280px;
+		padding: 0;
+	}
+
+	#signup-form h1 {
+		font-size: 1.5rem;
+		font-style: italic;
+	}
+
+	#signup-form p {
+		font-size: 0.55rem;
+		line-height: 0.8rem;
+		margin-top: 0;
+	}
+
+	#signup-form ul {
+		margin-top: 0;
+	}
+
+	#signup-form li {
+		font-size: 0.5rem;
+		line-height: 0.8rem;
+		background-size: 11px;
+		padding-left: 1.3rem;
+		margin-top: 0.3rem;
+	}
+
+	form {
+		margin-top: 0.5rem;
+	}
+
+	.label p {
+		font-size: 0.55rem;
+	}
+
+	input,
+	#submit {
+		padding: 0.7rem 0;
+		margin-top: 0.2rem;
+		border-radius: 7px;
+	}
+
+	input::placeholder {
+		font-size: 0.6rem;
+	}
+
+	#submit {
+		font-size: 0.6rem;
+		margin-top: 0.7rem;
+	}
+
+	#signup-form .desktop-img-container {
+		display: inline;
+		width: 40%;
+		margin-left: 2rem;
+	}
+
+	#signup-form {
+		width: 500x;
+	}
+	#signup-form .desktop-container {
+		display: flex;
+	}
+}
+
+/* desktop design  for both */
+
+@media (min-width: 780px) {
+	body,
+	main {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: hsl(235, 18%, 26%);
+	}
+
+	#success-message {
+		width: 320px;
+		margin: 0;
+		border-radius: 15px;
+		background-color: white;
+		padding-right: 1.5rem;
+	}
+
+	#success-message img {
+		margin-top: 1.8rem;
+		width: 30px;
+	}
+
+	#success-message h1 {
+		font-size: 30px;
+		margin-top: 1.2rem;
+	}
+
+	#success-message p {
+		font-size: 11px;
+		line-height: 1.2rem;
+		margin-top: 0.3rem;
+	}
+
+	#success-message button {
+		margin: 0;
+		font-size: 10px;
+		padding: 0.8rem 0;
+		margin-top: 1.1rem;
+		border-radius: 5px;
+		margin-bottom: 2rem;
+	}
+
+	/* siggnup form starts here */
+
+	#signup-form {
+		display: flex;
+		width: 500px;
+		margin: 0;
+		padding: 0;
+		background-color: hsl(0, 0%, 100%);
+		border-radius: 15px;
+	}
+
+	#signup-form .img-container img {
+		display: none;
+	}
+
+	#signup-form .desktop-container {
+		display: flex;
+		padding: 1rem;
+	}
+
+	#signup-form .page-description {
+		width: 280px;
+		padding: 0;
+	}
+
+	#signup-form h1 {
+		font-size: 1.5rem;
+		font-style: italic;
+	}
+
+	#signup-form p {
+		font-size: 0.55rem;
+		line-height: 0.8rem;
+		margin-top: 0;
+	}
+
+	#signup-form ul {
+		margin-top: 0;
+	}
+
+	#signup-form li {
+		font-size: 0.5rem;
+		line-height: 0.8rem;
+		background-size: 11px;
+		padding-left: 1.3rem;
+		margin-top: 0.3rem;
+	}
+
+	form {
+		margin-top: 0.5rem;
+	}
+
+	.label p {
+		font-size: 0.55rem;
+	}
+
+	input,
+	#submit {
+		padding: 0.7rem 0;
+		margin-top: 0.2rem;
+		border-radius: 7px;
+	}
+
+	input::placeholder {
+		font-size: 0.6rem;
+	}
+
+	#submit {
+		font-size: 0.6rem;
+		margin-top: 0.7rem;
+	}
+
+	#signup-form .desktop-img-container {
+		display: inline;
+		width: 40%;
+		margin-left: 2rem;
+	}
+}
