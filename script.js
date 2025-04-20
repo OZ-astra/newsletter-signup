@@ -11,7 +11,7 @@ const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
 emailField.addEventListener("input", () => {
 	setTimeout(() => {
-		emailField.style.border = "1px solid hsl(0, 0%, 58%, 0.9)";
+		emailField.style.border = "1px solid rgba(148, 148, 148, 0.9)";
 	}, 100);
 });
 
